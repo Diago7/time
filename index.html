@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Tracker - මුදල් කළමනාකරු</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Money Tracker</h1>
+
+        <div class="balance-container">
+            <h2>Total</h2>
+            <h1 id="balance">රු 0.00</h1>
+        </div>
+
+        <div class="inc-exp-container">
+            <div>
+                <h4>Income</h4>
+                <p id="money-plus" class="money plus">+රු 0.00</p>
+            </div>
+            <div>
+                <h4>
+                    The cost</h4>
+                <p id="money-minus" class="money minus">-රු 0.00</p>
+            </div>
+        </div>
+
+        <h3>Transaction history</h3>
+        <ul id="list" class="list">
+            </ul>
+
+        <h3>Add a new transaction</h3>
+        <form id="form">
+            <div class="form-control">
+                <label for="text">Description</label>
+                <input type="text" id="text" placeholder="Enter description..." required>
+            </div>
+            <div class="form-control">
+                <label for="amount">
+                    amount <br>
+                    (With a '-' sign if it is an expense, '+' or without a sign if it is an income)
+                </label>
+                <input type="number" id="amount" placeholder="Enter the amount..." required>
+            </div>
+            <button class="btn">Add the transaction</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
